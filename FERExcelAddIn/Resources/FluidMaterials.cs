@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FERExcelAddIn.Resources;
 
-namespace FERExcelAddIn.Resources
+namespace FERExcelAddIn
 {
-    public enum Phase
-    {
-        Gas,
-        Liquid,
-        TwoPhase,
-        Steam
-    }
 
     public static class MaterialDatabase
     {
@@ -93,8 +85,7 @@ namespace FERExcelAddIn.Resources
                 Viscosity = 1.00,
                 VaporPressure = 0.46,
                 BoilingPoint = 100,
-                DefaultTemperature = 25,
-                LatentHeatOfVaporization = 970 // BTU/lb for water at 212°F
+                DefaultTemperature = 25
             }
         },
         {
@@ -312,9 +303,8 @@ namespace FERExcelAddIn.Resources
             public int DefaultTemperature { get; set; } // °C
 
             public bool IsSpecialCase { get; set; } = false;
-
-            // Added property
-            public double LatentHeatOfVaporization { get; set; } // BTU/lb
         }
+
     }
+    public enum Phase { Gas, Liquid, TwoPhase, Steam }
 }
