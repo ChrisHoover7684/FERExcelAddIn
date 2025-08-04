@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="FERChartRibbon_Load">
+	<ribbon>
+		<tabs>
+			<tab id="tabFER" label="FER">
+				<group id="groupCharts" label="Charts">
+					<button id="btnShowThicknessForm"
+							label="Nominal Thickness"
+							size="large"
+							onAction="btnShowThicknessForm_Click"
+							imageMso="ChartTypeLine"/>
+					<button id="btnShowLWNForm"
+							label="LWN"
+							size="large"
+							onAction="btnShowLWNForm_Click"
+							imageMso="ChartTypeBarStacked"/>
+				</group>
+
+				<!-- New Calculations Group -->
+				<group id="groupCalculations" label="Calculations">
+					<button id="btnShowBoltInfoForm"
+							label="Bolt Info"
+							size="large"
+							onAction="btnShowBoltInfoForm_Click"
+							imageMso="GroupInsert"/>
+					<button id="btnShowConversionForm"
+							label="Unit Converter"
+							size="large"
+							onAction="btnShowConversionForm_Click"
+							imageMso="ConvertDialog"/>
+					<button id="btnShowPipeWeightCalculator"
+							label="Pipe Weight"
+							size="large"
+							onAction="btnShowPipeWeightCalculator_Click"
+							imageMso="Calculator"/>
+					<button id="btnThermalExpansion"
+							label="Thermal Expansion"
+							size="large"
+							onAction="btnThermalExpansion_Click"
+							imageMso="Temperature"/>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
